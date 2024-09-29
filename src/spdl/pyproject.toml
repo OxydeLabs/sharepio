@@ -1,0 +1,51 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "spdl"
+description = "Resolve and download SharePoint site/drive files located on a distant server"
+version = "0.3.0"
+readme = "README.md"
+keywords = ["SharePoint", "Microsoft", "Download"]
+authors = [{ name = "Florian Indot", email = "florian.indot@minfin.fed.be" }]
+maintainers = [
+  { name = "Florian Indot", email = "florian.indot@minfin.fed.be" },
+]
+requires-python = ">= 3.12"
+dependencies = [
+  "aiofiles",
+  "aiohttp",
+  "aiosignal",
+  "async-lru",
+  "attrs",
+  "certifi",
+  "cffi",
+  "charset-normalizer",
+  "click",
+  "cryptography",
+  "frozenlist",
+  "idna",
+  "markdown-it-py",
+  "msal",
+  "multidict",
+  "mdurl",
+  "pycparser",
+  "Pygments",
+  "PyJWT",
+  "python-dateutil",
+  "requests",
+  "rich",
+  "shellingham",
+  "six",
+  "toml",
+  "typer",
+  "typing_extensions",
+  "urllib3",
+  "validators",
+  "yarl",
+]
+
+[project.scripts]
+spdl = "spdl:cli:main"
+

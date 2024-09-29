@@ -1,0 +1,19 @@
+[server]
+tenant-id = "4cfa3947-0301-459b-ac3c-e75051e34764"
+
+[auth]
+client-id = "CLIENT-ID"
+private-key-path = "./auth/lvixjupyp.key.pem"
+cert-path = "./auth/cert.pem" # Machine dependant
+cert-thumbprint = "1224e073fc1588ed537d041c74862ee83cdb4d48" # Certificate dependant
+scopes = ["https://graph.microsoft.com/.default"]
+
+[client]
+retry-count = 3
+worker-count = 12
+timeout-window = 600
+proxy = "http://proxies.finbel.intra:8080"
+page-size = 2048
+queue-size = 2048
+
+[sites]
